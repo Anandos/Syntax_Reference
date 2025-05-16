@@ -43,5 +43,5 @@
 |brew upgrade	|	//upgrades outdates installed packages to the latest version|
 |brew search sfml|	//searches for formulae and casks for package|
 |brew autoremove|	//removes decencies that are no longer needed|
-
+|formulae’, ‘casks’|//formulae are command line packages, casks are apps accessible to regular user|
 	
