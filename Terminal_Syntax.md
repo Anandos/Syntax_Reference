@@ -31,17 +31,17 @@
 |which brew, which vscode	|//path of an application install|
 |history	|//history of previous commands, each command is numbered<br>!n to rerun command number n|
 |ps	|//shows current processes; process ID (PID), CPU time, command name|
-|"command && command \|\| command <br> command; command <br>cat main.cpp \| grep “Cells”| <br>//&& adds commands in chain, both must succeed  <br>\|\| do left command else do right hand command <br>\|feed right hand output into input for left hand command"|
+|command && command \|\| command <br> command; command <br>cat main.cpp \| grep “Cells”| <br>//&& adds commands in chain, both must succeed  <br>\|\| do left command else do right hand command <br>\|feed right hand output into input for left hand command"|
 |//Ctrl+C sends SIGINT command to computer||
-|brew —version	|	|
-|brew install sfml|	|
-|brew list	|	|
-|brew uninstall sfml|	|
-|brew cleanup	|	|
-|brew info sfml	|	|
-|brew update	|	|
-|brew upgrade	|	|
-|brew search sfml|	|
-|brew autoremove|	|
+|brew —version	|	//display current Homebrew version|
+|brew install sfml|	//installs this package and it’s dependencies|
+|brew list	|	//lists Homebrew packages (formulae and casks)|
+|brew uninstall sfml|	//deletes package and it’s dependencies|
+|brew cleanup	|	//deletes old versions of packages and old cache files (120 days)|
+|brew info sfml	|	//display package version, decencies, installation status, |
+|brew update	|	//update Homebrew package index without installing (run before brew upgrade)|
+|brew upgrade	|	//upgrades outdates installed packages to the latest version|
+|brew search sfml|	//searches for formulae and casks for package|
+|brew autoremove|	//removes decencies that are no longer needed|
 
 	
