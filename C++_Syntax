@@ -1,13 +1,13 @@
 //C++ Syntax
 #include <iostream>
-#include <string>
-#include <vector>
 #include <random>
+#include <chrono>
+#include <thread>
 
-using std::cout; using std::cin; using std::endl; using std::string;
+using std::cout; using std::cin; using std::endl;
 
 int getRandInt(int num){
-  std::random_device rd;
+	std::random_device rd;
 	std::mt19937 gen(rd());
 	std::uniform_int_distribution <int> dist(0, num);
 	return dist(gen); 
@@ -22,24 +22,21 @@ public:
 	int no_owners{0};
 	
 	Car(string mod, int own, int reg, bool stole, string lic) :
-	model(mod), no_owners += own, reg_no(reg), stolen(stole), 					
-  licence_plate(lic){}
+	model(mod), no_owners(own), reg_no(reg), stolen(stole), licence_plate(lic){}
 };
 
-enum cardSuit{
-	Hearts, Diamonds, Clubs, Spades
-}
+enum cardSuit{Hearts, Diamonds, Clubs, Spades};
 
 int main(){
-	int a{0};			      // 4 bytes
+	int a{0};		// 4 bytes
 	double x{9999.99};	// 8 bytes
-	float y{99.9999};		// 4 bytes
+	float y{99.9999};	// 4 bytes
 	bool game{“true”};	// 1 byte
 	cardRank card_a{Hearts};
 	cardRank card_b = static_cast<cardRank>(0);
 	
 	string name{“Anand”};
-	const char* surname{“Damodaran”}; // c string needs specific memory space
+	const char* surname{“Damodaran”}; // c string needs specific memory amount
 	char* alpha[] = “abcd”;
 
 	std::vector<int> grades_list{99, 88, 77, 66};
@@ -53,12 +50,12 @@ int main(){
 	
 	for(int i : list_a) // index through list
 	for(int i = 0; i < length; i++){
-      list_a[i] = i;
-      cout << list_a[i] << ' ';
-    }
+        	list_a[i] = i;
+        	cout << list_a[i] << ' ';
+    	}
 	
-	for(auto &i : list_a){ // pointer for loop
-	  i *= 4; // go to pointer and multiple x 4
+	for(auto &i : list_a){ 	// pointer for loop
+		i *= 4; // go to pointer and multiple x 4
 	}
 
 	cout << function(&a);	//pass a directly to function instead of copy
@@ -71,5 +68,7 @@ int main(){
 		cout << “variable doesn’t exist ” << e.what() << endl;
 	}
 	cout << “End of program…” << endl;
+
+	std::this_thread::sleep_for(std::chrono::milliseconds(1000));
 
 }
