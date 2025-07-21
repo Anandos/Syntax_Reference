@@ -1,0 +1,4 @@
+Command,Description
+cd /path/to/directory,//absolute path from any present directory
+cd path/to/directory,//relative path from present directory
+pwd,//present working directory
