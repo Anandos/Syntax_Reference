@@ -1,7 +1,7 @@
 Command,Description
-//Terminal is a text input, output environment. A wrapper for the shell.
-//Shell interprets commands from the user for the kernel and outputs the results sent from the kernel.
-//Kernel is the lowest level of the OS that interacts directly with the computer hardware.
+//Terminal is a text input, output environment. A wrapper for the shell,
+//Shell interprets commands from the user for the kernel and outputs the results sent from the kernel,
+//Kernel is the lowest level of the OS that interacts directly with the computer hardware,
 cd /path/to/directory,//absolute path from any present directory
 cd path/to/directory,//relative path from present directory
 pwd,//present working directory
