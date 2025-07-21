@@ -26,8 +26,7 @@ sudo apt update ,//updates metadata for repositories without installing anything
 sudo -l -v,//lists user allowed and forbidden commands; -v extends user credentials if valid or asks for password
 which brew; which vscode	,//path of an application install
 history	,//history of previous commands; each command is numbered<br>!n to rerun command number n
-ps	,//shows current processes; process ID (PID); CPU time; command name,
-command && command \|\| command <br> command; command <br>cat main.cpp \| grep “Cells”| <br>//&& adds commands in chain; both must succeed  <br>\|\| do left command else do right hand command <br>\|feed right hand output into input for left hand command
+ps	,//shows current processes; process ID (PID); CPU time; command name
 //Ctrl+C sends SIGINT command to computer
 brew —version	,	//display current Homebrew version
 brew install sfml,	//installs this package and it’s dependencies
