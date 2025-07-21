@@ -1,8 +1,9 @@
-//Terminal is a text input, output environment. A wrapper for the shell.<br>,
-//Shell interprets commands from the user for the kernel and outputs the results sent from the kernel.,
-//Kernel is the lowest level of the OS that interacts directly with the computer hardware.,
-Command,Description
-cd /path/to/directory	,//absolute path from any present directory
+//Terminal is a text input, output environment. A wrapper for the shell.<br>
+//Shell interprets commands from the user for the kernel and outputs the results sent from the kernel.<br>
+//Kernel is the lowest level of the OS that interacts directly with the computer hardware.
+|Command|Description|
+|-------|-----------|
+|cd /path/to/directory	|//absolute path from any present directory|
 |cd path/to/directory	|//relative path from present directory|
 |pwd	|//present working directory|
 |mkdir new_directory	|//create new directory|
@@ -30,6 +31,7 @@ cd /path/to/directory	,//absolute path from any present directory
 |which brew, which vscode	|//path of an application install|
 |history	|//history of previous commands, each command is numbered<br>!n to rerun command number n|
 |ps	|//shows current processes; process ID (PID), CPU time, command name|
+|command && command \|\| command <br> command; command <br>cat main.cpp \| grep “Cells”| <br>//&& adds commands in chain, both must succeed  <br>\|\| do left command else do right hand command <br>\|feed right hand output into input for left hand command"|
 |//Ctrl+C sends SIGINT command to computer||
 |brew —version	|	//display current Homebrew version|
 |brew install sfml|	//installs this package and it’s dependencies|
