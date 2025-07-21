@@ -1,5 +1,5 @@
 Command,Description
-//Terminal is a text input, output environment. A wrapper for the shell,
+//Terminal is a text input, output environment. A wrapper for the shell,asd
 cd /path/to/directory,//absolute path from any present directory
 cd path/to/directory,//relative path from present directory
 pwd,//present working directory
